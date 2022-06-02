@@ -1,0 +1,43 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KinoView"
+        xmlns:b="http://schemas.microsoft.com/xaml/behaviors" x:Class="KinoView.MainWindow"
+        mc:Ignorable="d"
+        Title="Главное меню" Height="173.52" Width="410.329" Background="#FFF3ECEC">
+    <Grid Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="b1" Content="Сортировать по рейтингу" HorizontalAlignment="Left" Margin="140,66,0,0" VerticalAlignment="Top" Width="152" Click="b1_Click" Height="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White">
+            <b:Interaction.Behaviors>
+                <b:FluidMoveBehavior/>
+            </b:Interaction.Behaviors>
+        </Button>
+        <Button x:Name="b2" Content="Сортировать по дате выхода" HorizontalAlignment="Left" Margin="140,91,0,0" VerticalAlignment="Top" Width="171" Click="Button_Click" Height="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White"/>
+        <Button x:Name="b3" Content="Фильтр" HorizontalAlignment="Left" Margin="297,66,0,0" VerticalAlignment="Top" Width="75" Click="b3_Click" Height="20" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}"/>
+        <Image x:Name="is1" HorizontalAlignment="Left" Height="100" Margin="22,23,0,0" VerticalAlignment="Top" Width="100" Source="logo.jpg"/>
+        <Label Content="KinoView" HorizontalAlignment="Left" Margin="140,23,0,0" VerticalAlignment="Top" Width="93" FontSize="20" FontFamily="Comic Sans MS" FontWeight="Bold" FontStyle="Italic" Height="38" Background="#00000000">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF23FF00" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Button x:Name="b4" Content="Избранное" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="311,91,0,0" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" Click="b4_Click"/>
+        <Label Content="1.0  Beta" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,111,0,0" Height="24">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+
+    </Grid>
+</Window>
